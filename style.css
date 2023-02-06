@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondry-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:30px
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+ h1{
+    font-size: 3rem;
+ }
+
+ h2{
+    font-size: 2rem;
+ }
+ 
+ h3{
+    font-size: 1.5rem;
+ }
+ p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color:var(--secondry-text-color);
+    line-height: 1.8rem;
+ }
+
+ a{
+    text-decoration: none;
+    display: inline-block;
+ }
+ ul{
+    list-style: none;
+ }
+
+ .small-bold-text{
+    font-size:1rem; 
+    font-weight: 700;
+ }
+ .container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+ }
+
+ .flex{
+    display: flex;
+    align-items: center;
+ }
+ .hover-link{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+ }
+
+ .hover-link:hover{
+    color:var(--accent-color);
+ }
+.primary-button {
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  font-weight: 500;
+  color: white !important;
+  padding: 14px 28px;
+  font-size: 16px;
+  box-shadow: 0 0 2px var(--secondry-text-color);
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.primary-button:hover {
+background-color: var(--accent-color-dark);
+}
+.secondary-button {
+   border: 1px solid var(--secondry-text-color);
+   border-radius: 10px;
+   font-weight: 700;
+   color: var(--primary-text-color) !important;
+   padding: 14px 28px;
+   font-size: 16px;
+   transition: 0.2s ease-out;
+   cursor: pointer;
+ }
+ .secondary-button:hover{
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+ }
+
+
+
+     /*top-banner*/
+.top-banner{
+    background-image: url('./assets/asset/30.png');
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+
+ .banner-text{
+    color:white;
+    padding:20px 30px;
+    text-align:center; 
+ }
+.main-nav{
+    margin-top: 10px;
+    justify-content: space-between;
+
+}
+.company-logo img{
+    width:200px;
+}
+.nav-links{
+    flex-basis: 730px;
+}
+.nav-links ul{
+    justify-content: end;
+    gap: 25px;
+}
+/*header*/
+hearder{
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section{
+    justify-content: center;
+    gap:50px;
+}
+.header-right img{
+    width:600px;
+    position:sticky;
+}
+.get-started-btn{
+    margin-top: 20px;
+}
+
+.header-left{
+    max-width: 40vw;
+}
+.header-left h1{
+    margin-top:20px;
+}
+ /* Companies header*/
+ .companies-header {
+text-align: center;
+margin-block: 30px;
+color:var(--primary-text-color);
+ }
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .logo{
+    height:46px;
+    }
+ .myInput {
+        background-image: url('./assets/search icon.png'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        height:20px;
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+        text-align: center;
+      }
+      #myUL {
+        /* Remove default list styling */
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      #myUL li a {
+        border: 1px solid #ddd; /* Add a border to all links */
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6; /* Grey background color */
+        padding: 12px; /* Add some padding */
+        text-decoration: none; /* Remove default text underline */
+        font-size: 18px; /* Increase the font-size */
+        color: black; /* Add a black text color */
+        display: block; /* Make it into a block element to fill the whole list */
+        text-align:end;
+      }
+      #myUL li a:hover:not(.header) {
+        background-color: #eee; /* Add a hover effect to all links, except for headers */
+      }
+
+      /* Features-section*/
+
+      .features-header{
+        text-align: center;
+      }
+     .features-heading-text{
+        margin-bottom: 20px;
+     }
+     
+      .features-section{
+        padding: 80px var(--padding-inline-section) 0;
+      }
+      .features-header{
+        text-align: center;
+      }
+      .features-card {
+        flex-direction:column;
+        gap: 20px;
+        max-width: 30%;
+        text-align: center;
+      }
+ .features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: center;
+    margin-top: 20px;
+ }
+ .container1{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+ }
+ .card{
+    position: relative;
+    width: 210px;
+    height: 210px;
+    margin: 25px;
+    box-shadow: 0 20px 40px  rgb(1 1 1 /20%);
+    border-radius: 10px;
+    overflow: hidden;
+ }
+ /*Slider*/
+
+.p-slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    width: 95%;
+}
+ .product-slider-heading{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #313131;
+    text-align: center;
+    margin: 0px;
+ }
+ .product-box{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    padding: 15px;
+    border:1px solid rgba(0,0,0,0.08);
+    border-radius: 10px;
+    margin:0px 20px;
+    position:static;
+
+    }
+    .p-img-container{
+        width:100%;
+        height:100%;
+        display: flex;
+        overflow: hidden;
+    }
+    .p-img a,
+    .p-img{
+        width:100%;
+        height:300px;
+        display: flex;
+    }
+    .p-img a img{
+        width:100%;
+        height:100%;
+        object-position: center;
+        object-fit: contain;
+        animation: fade 0.6s;
+    }
+    .p-img-back{
+        display: none;
+    }
+    .p-img-container:hover .p-img-back{
+        display: block;
+}
+.p-img-container:hover .p-img-front{
+    display: none;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.p-box-text{
+    margin-top: 5px;
+    width: 100%;
+} 
+.product-category{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-category span{
+    color: #acacac;
+    font-size: 0.9rem;
+    margin: 5px 0px;
+}
+.product-title{
+    color:#333333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all ease 0.3s;
+}
+.product-title:hover{
+    color:#111111;
+    opacity: 0.7;
+    transition: all ease 0.3s;
+}
+.price-buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+.price-buy, p-price{
+    font-size: 1.3rem;
+    color:#333333;
+    font-weight: 700;
+}
+.price-buy .p-buy-btn{
+    color:#e63b3b;
+    margin:0px 5px;
+    font-weight: 600;
+}
+.price-buy .p-buy-btn:hover{
+    text-decoration: underline;
+}
+.slider-btns{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 30px auto 10px auto;
+    padding: 0px 10px;
+}
+.slider-btns button{
+    position: static !important;
+    transform: translate(0,0);
+    background-color: #f3f3f3;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border:1px solid #cfcfcf;
+    border-radius: 4px;
+}
+.slider-btns button span{
+    font-weight: bold;
+    padding:10px  15px 10px 10px;
+    position: relative;
+    text-decoration: none;
+}
+.slider-btns button span::before,
+.slider-btns button span::after{
+    border-right:2px solid;
+    display: block;
+    height:8px;
+    margin-top: -6px;
+    position: absolute;
+    transform: rotate(135deg);
+    right:10px;
+    top:50%;
+    width:0;    
+    content:'';
+}
+.slider-btns button span::after{
+    margin-top: -1px;
+    transform: rotate(45deg);
+}
+.slider-btns .glider-prev span{
+transform: rotate(-180deg);
+}
+@media(max-width:500px){
+    .product-box{
+        margin: 0px 10px;
+    }
+    .p-slider{
+        width: 100%;
+    }
+    .product-slider-heading{
+        text-align: center;
+        font-size: 1.3rem;
+        display: flex;
+    }
+}
+.big-features-section{
+    padding: 30px var(--padding-inline-section);
+}
+.big-feature-container{
+    gap: 30px;
+}
+.header-right1 img{
+    max-width: 35vw;
+    position: absolute;
+    margin-left: auto;
+}
